@@ -44,13 +44,15 @@ jane@gmail.com
 111-111-1111
 ```
 
-Start program:
+Run script:
 ```
 python runner.py recipients.csv emails.txt 'Subject Line' 'Dear'
 ```
+Where recipients.csv and email.txt are files or, if they are not in this directory, paths to files described above and in help below.
+
 To get help include --help:
 ```
-usage: runner.py [-h] recipients body intro
+usage: runner.py [-h] recipients body subject intro
 
 Sending emails using gmail
 
@@ -58,7 +60,8 @@ positional arguments:
   recipients  a path to a csv file containing the recipient names and emails
   body        a path to a txt file containg the body, closing, and signature
               of the email
-  intro       the intro or greeting - ex: Dear, Hello, Good Morning
+  subject     the subject of the email - ex: 'Concern regarding bill 1.1.1'
+  intro       the intro or greeting - ex: 'Dear', 'Hello', 'Good Morning'
 
 optional arguments:
   -h, --help  show this help message and exit
