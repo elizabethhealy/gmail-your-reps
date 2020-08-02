@@ -43,6 +43,5 @@ csvfile.close()
 #send emails
 with yagmail.SMTP(gmail_address, gmail_password) as yag:
     for email, name in recip_dict.items():
-      body = intro + " " + name + ",\n\n" + body_str
+      body = intro + " " + name + ",\n\n" + body_str.replace("<NAME>", name)
       yag.send(email, subject, body)
-    

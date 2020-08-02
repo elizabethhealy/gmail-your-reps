@@ -36,6 +36,8 @@ My name is Jane Doe and I a do not approve of bill 1.1.1.
 
 Please consider voting against this bill.
 
+Thank you <NAME>.
+
 Sincerely,
 Jane Doe
 
@@ -43,10 +45,11 @@ Jane Doe
 jane@gmail.com
 111-111-1111
 ```
+If you would like to include the name of the recipient anywhere in the body of the email, you can use '<NAME>' like above. 
 
 Run script:
 ```
-python runner.py recipients.csv emails.txt 'Subject Line' 'Dear'
+python runner.py recipients.csv email.txt 'Subject Line' 'Dear'
 ```
 Where recipients.csv and email.txt are files or, if they are not in this directory, paths to files described above and in help below.
 
