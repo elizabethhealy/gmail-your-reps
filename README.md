@@ -45,7 +45,7 @@ Jane Doe
 jane@gmail.com
 111-111-1111
 ```
-If you would like to include the name of the recipient anywhere in the body of the email, you can use '<NAME>' like above. 
+If you would like to include the name of the recipient anywhere in the body of the email, you can use &lt;NAME&gt; like above. 
 
 Run script:
 ```
